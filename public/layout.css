@@ -1,0 +1,158 @@
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+nav li {
+  float: left;
+}
+
+nav a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li a:hover {
+  background-color: #111;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 20px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+body {
+  text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(3, 200px);
+  grid-gap: 1em;
+}
+
+header,
+aside,
+article,
+footer {
+  background: #333;
+  padding: 1em;
+  grid-row: 5/5;
+  grid-column: 1/4;
+}
+
+footer {
+  color: white;
+  list-style-type: none;
+}
+
+article {
+  grid-row: 1 / 5;
+  grid-column: 2 / 3;
+  margin-left: 150px;
+  margin-right: 150px;
+  background: #285c74;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: black;
+  color: white;
+}
+
+td,
+th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#tr:nth-child {
+  background-color: #f2f2f2;
+}
+
+td:hover {
+  background-color: #ddd;
+}
+
+body {
+  background: linear-gradient(90deg, #43cea2, #185a9d);
+}
+
+section {
+  background: #285c74;
+  overflow-x: hidden;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+table {
+  background: white;
+  margin: auto;
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+li {
+  list-style-type: none;
+}
