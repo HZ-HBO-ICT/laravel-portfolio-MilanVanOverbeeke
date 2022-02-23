@@ -8,6 +8,7 @@ use App\Http\Controllers\FaqController;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\BlogController;
 use App\Http\Controllers\PostController;
+use App\Http\Controllers\ArticlesController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +32,8 @@ use App\Http\Controllers\PostController;
 //    return view('test');
 //});
 
+Route::get('/blog/{article}', [ArticlesController::class, 'show']);
+
 Route::get('/welcome', [WelcomeController::class, 'show']);
 Route::get('/home', [HomeController::class, 'show']);
 Route::get('/profile',[ProfileController::class, 'show']);
@@ -38,3 +41,5 @@ Route::get('/faq',[FaqController::class, 'show']);
 Route::get('/dashboard',[DashboardController::class, 'show']);
 Route::get('/blog',[BlogController::class, 'show']);
 Route::get('/post',[PostController::class, 'show']);
+Route::get('/articles', 'ArticlesController@index');
+Route::get('/articles/{article}', 'ArticlesController@show');

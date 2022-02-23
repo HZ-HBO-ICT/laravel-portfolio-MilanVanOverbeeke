@@ -117,6 +117,10 @@
                 dat als je het illegaal zou doen, het veel meer oplevert.
             </p>
         </section>
+        @foreach($articles as $article)
+            <h3><a href="/blog/{{$article->id}}">{{$article->title}}</a></h3>
+            <p><a>{{$article->excerpt }}</a></p>
+        @endforeach
     </article>
 </div>
 </body>
